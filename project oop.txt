@@ -1,0 +1,52 @@
+
+package javaapplication25;
+
+import javax.swing.JOptionPane;
+
+
+public class Area {
+    public void circle(){
+String numStr;
+	double result;
+	double radius;
+	double area;
+	JOptionPane.showMessageDialog(null,"AREA CALCULATOR"," SIMPLE PROGRAM.",JOptionPane.PLAIN_MESSAGE);
+	numStr=JOptionPane.showInputDialog("Enter the radius");
+	radius=Integer.parseInt(numStr);
+	result=radius*radius*3.142857142;
+	JOptionPane.showMessageDialog(null,"The area of " + radius+ " is "+ result);
+    }
+    
+    public void Rectangle(){
+      String inp = JOptionPane.showInputDialog("Enter the first value to calculate the area of a rectangle: ");
+            int m1 = Integer.parseInt(inp);
+            String inp2 = JOptionPane.showInputDialog("Enter the second value to calculate the area of a rectangle: ");
+            int m2 = Integer.parseInt(inp);
+	JOptionPane.showMessageDialog(null,"The area of " + " Rectangle" +m1*m2);
+
+    }
+public void Triangle(){
+    String input = JOptionPane.showInputDialog("Enter the first value to calculate the area of a triangle: ");
+ int n1 = Integer.parseInt(input); //not inputStr <----------
+ String inp = JOptionPane.showInputDialog("Enter the second value to calculate the area of a triangle: ");
+ int n2 = Integer.parseInt(inp);//not inputStr <---------
+     	JOptionPane.showMessageDialog(null,"The area of " + " Triangle" +n1*n2/2);
+
+
+}         
+public void Square(){
+ 	    String jr = JOptionPane.showInputDialog("Enter the first value to calculate the area of a square: ");
+ int f1 = Integer.parseInt(jr); 
+ String inp = JOptionPane.showInputDialog("Enter the second value to calculate the area of a square: ");
+ int f2 = Integer.parseInt(jr);
+     	JOptionPane.showMessageDialog(null,"The area of " + " Square " + f1*f2);
+
+}
+
+    public static void main(String[] args) {
+ Area peshin =  new Area();
+ peshin.Rectangle();
+    }
+
+    
+}
